@@ -1,0 +1,11 @@
+{
+    "AppSyncApiName": "amplifylaborboard",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": "false",
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authamplifylaborboardac7795dc",
+            "Outputs.UserPoolId"
+        ]
+    }
+}

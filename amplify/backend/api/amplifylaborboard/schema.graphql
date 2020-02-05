@@ -1,0 +1,25 @@
+type Provider @model @searchable {
+	id: ID!
+	name: String!
+	contactNumber: String
+	picture: S3Object
+	onCall: Boolean
+	providerType: String
+	role: String
+	todaysRole: String
+}
+
+type Room @model {
+	id: ID!
+	roomNumber: String!
+	contactNumber: String
+	providerName: String
+	picture: S3Object
+	dummyPic: S3Object
+}
+
+type S3Object {
+	bucket: String!
+	region: String!
+	key: String!
+}
